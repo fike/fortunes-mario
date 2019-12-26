@@ -1,4 +1,5 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 import sys
 
@@ -12,7 +13,7 @@ header = r'''
 \usepackage[brazil]{babel}
 \usepackage{indentfirst}
 % #\usepackage[T1]{fontenc}
-\usepackage[latin1]{inputenc}
+\usepackage[utf8x]{inputenc}
 \usepackage{fancyhdr}
 \usepackage{fancyvrb}
 \usepackage{url}
@@ -68,7 +69,7 @@ for file in sys.argv[1:]:
     tex_file.write(r'\chapter{' + section_name + '}\n')
     tex_file.write(bminipage + '\n')
 
-    print section_name
+    print(section_name)
     if section_name == 'mario.arteascii':
         tex_file.write(bverbatimascii + '\n')
     elif section_name == 'mario.computadores':
