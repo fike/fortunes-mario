@@ -1,3 +1,5 @@
+SHELL=/bin/bash
+
 all: booklet_from_pdf
 
 SRCDIR=../
